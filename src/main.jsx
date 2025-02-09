@@ -4,10 +4,11 @@ import "./index.css";
 import App from "./App.jsx";
 import "modern-normalize";
 import { Provider } from "react-redux";
-import { persistor, store } from "./redux/filters/store.js";
+
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
+import { persistor, store } from "./redux/store.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

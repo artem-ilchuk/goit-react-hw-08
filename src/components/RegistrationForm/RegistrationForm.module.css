@@ -1,0 +1,308 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  background-color: var(--background-color);
+  border-radius: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 280px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  fill: white;
+  background-color: orangered;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 28px;
+  color: #2563eb;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 10px;
+  background-color: #2563eb;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #2563eb;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.policy {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.policyText {
+  font-size: 14px;
+  color: #555;
+}
+
+.policyLink {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.policyLink:hover {
+  text-decoration: underline;
+}
+
+.checkBox {
+  appearance: none;
+  width: 24px;
+  height: 18px;
+  border: 2px solid #2563eb;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkBox:checked {
+  background-color: rgb(170, 228, 52);
+  border: none;
+}
+
+.checkBox:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.message,
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 16px;
+  text-align: center;
+}
+
+.signin {
+  text-align: center;
+}
+
+.link {
+  font-weight: 700;
+  padding-left: 5px;
+  color: #2563eb;
+}
+
+.signin a:hover {
+  text-decoration: underline #2563eb;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 5px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+.error {
+  font-size: small;
+  color: red;
+  padding-left: 10px;
+}
+
+.span {
+  color: #2563eb;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.button {
+  background-color: rgb(170, 228, 52);
+  color: black;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #61d967;
+}
+
+.buttonDisabled {
+  background-color: #d1d5db;
+  pointer-events: none;
+}
+
+.buttonDisabled:hover {
+  background-color: #d1d5db;
+}
+@media (min-width: 768px) {
+  .form {
+    gap: 10px;
+    width: 340px;
+    padding: 30px;
+  }
+
+  .container .title {
+    font-size: 36px;
+    color: #2563eb;
+    padding-top: 30px;
+  }
+
+  .form label .input {
+    padding: 10px 10px;
+  }
+  .input {
+    font-size: 20px;
+  }
+  .policyText {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .error {
+    font-size: 14px;
+    color: red;
+  }
+
+  @media (min-width: 1280px) {
+    .form {
+      gap: 20px;
+      width: 440px;
+    }
+    .btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .container .title {
+      font-size: 46px;
+      color: #2563eb;
+      padding-top: 30px;
+    }
+
+    .policyText {
+      font-size: 18px;
+    }
+    .checkBox {
+      width: 27px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .message,
+    .signin {
+      font-size: 20px;
+    }
+    .span {
+      font-size: 20px;
+    }
+    .input::placeholder {
+      font-size: 22px;
+    }
+    .form label .input {
+      padding: 15px 15px;
+    }
+    .input {
+      font-size: 20px;
+    }
+    .iconButton {
+      font-size: 22px;
+    }
+    .button {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .error {
+      font-size: 16px;
+      color: red;
+    }
+  }
+}

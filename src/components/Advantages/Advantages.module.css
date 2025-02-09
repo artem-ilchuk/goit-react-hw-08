@@ -1,0 +1,216 @@
+.advantagesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.headerContainer {
+  background-color: #14b8a6;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerTitle {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  font-weight: bold;
+  color: #2d3748;
+  padding: 5px 10px;
+  max-width: 260px;
+}
+.advantageText {
+  font-size: 0.9rem;
+  color: var(--text-add);
+  line-height: 1.1rem;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.advantagesContainer {
+  background-color: #e2e8f0;
+  padding: 10px;
+  border-radius: 16px;
+  width: 288px;
+  border: 1px solid #e2e8f0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.advantagesTitle {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  color: #187eb9;
+  margin-bottom: 8px;
+}
+
+.divider {
+  border-top: 1px solid #edf2f7;
+}
+
+.accordionItem {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  max-width: 288px;
+  margin-bottom: 10px;
+}
+
+.accordionTitle {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.accordionContent {
+  background-color: rgb(142, 232, 202);
+  color: #4a5568;
+  padding: 10px;
+  line-height: 1.5rem;
+
+  border-radius: 4px;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: left;
+}
+
+.accordionListItem {
+  font-size: 0.9rem;
+  line-height: 1.1;
+  position: relative;
+  padding-left: 10px;
+}
+
+.accordionListItem::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000000;
+  font-size: 0.9rem;
+  margin-left: 0;
+}
+
+.accordionButton {
+  padding: 10px;
+  background-color: aliceblue;
+  color: #000000;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  font-weight: 700;
+  border-radius: 4px;
+}
+@media (min-width: 768px) {
+  .advantagesSection {
+    max-width: 768px;
+    padding-top: 40px;
+  }
+
+  .headerTitle {
+    font-size: 2.6rem;
+    padding: 20px 40px;
+    max-width: 700px;
+  }
+  .advantageText {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding-top: 20px;
+    text-align: left;
+  }
+  .advantagesContainer {
+    width: 680px;
+    margin: 30px 0px;
+  }
+
+  .advantagesTitle {
+    font-size: 3.75rem;
+  }
+
+  .accordionItem {
+    width: 680px;
+    margin-bottom: 10px;
+  }
+
+  .accordionTitle {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .accordionContent {
+    padding: 10px;
+    line-height: 1.5rem;
+  }
+
+  .accordionListItem {
+    font-size: 1.25rem;
+    position: relative;
+    padding-left: 15px;
+  }
+
+  .accordionButton {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 1280px) {
+  .advantagesSection {
+    max-width: 1280px;
+    padding: 20px 0px;
+  }
+
+  .headerTitle {
+    font-size: 3rem;
+    padding: 30px 40px;
+    max-width: 800px;
+  }
+  .advantageText {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding-top: 20px;
+    text-align: left;
+  }
+  .advantagesContainer {
+    padding: 20px;
+    width: 680px;
+    margin-top: 30px;
+  }
+
+  .advantagesTitle {
+    font-size: 3.75rem;
+  }
+
+  .accordionItem {
+    width: 680px;
+    margin-bottom: 10px;
+  }
+
+  .accordionTitle {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .accordionContent {
+    padding: 10px;
+    line-height: 1.5rem;
+  }
+
+  .accordionListItem {
+    font-size: 1.25rem;
+    position: relative;
+    padding-left: 15px;
+  }
+
+  .accordionButton {
+    padding: 20px;
+    font-size: 1.9rem;
+  }
+}

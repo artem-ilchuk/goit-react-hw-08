@@ -1,0 +1,138 @@
+.fixedOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal {
+  width: 280px;
+  padding: 20px;
+  background-color: #edf2f7;
+  border: 2px solid #2d3748;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form,
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.inputField {
+  padding: 12px;
+  background-color: #e2e8f0;
+  border: 2px solid #2d3748;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  padding-left: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #38b2ac;
+}
+
+.errorMessage {
+  color: #e53e3e;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.saveButton {
+  background-color: #38b2ac;
+  color: #fff;
+}
+
+.saveButton:hover {
+  background-color: #319795;
+}
+
+.cancelButton {
+  padding: 10px 26px;
+  background-color: #718096;
+  color: #fff;
+}
+
+.cancelButton:hover {
+  background-color: #4a5568;
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 320px;
+    gap: 15px;
+  }
+  .label {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .inputField::placeholder {
+    font-size: 17px;
+  }
+
+  .button {
+    padding: 10px 10px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .cancelButton {
+    padding: 10px 34px;
+  }
+  .errorMessage {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1280px) {
+  .modal {
+    border: 3px solid #2d3748;
+    width: 420px;
+    gap: 15px;
+  }
+  .form,
+  .label {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .inputField::placeholder {
+    font-size: 20px;
+  }
+
+  .buttonWrapper {
+    padding: 5px;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .cancelButton {
+    padding: 10px 44px;
+  }
+  .errorMessage {
+    font-size: 18px;
+  }
+}

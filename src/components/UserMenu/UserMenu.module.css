@@ -1,0 +1,54 @@
+.appContainer {
+  background-image: url("/src/assets/Leonardo_Phoenix_10_Image_features_a_minimalist_and_modern_sty_3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+.rightPanel {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .leftPanel {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1280px) {
+  .appContainer {
+    height: 100vh;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 20px;
+    gap: 20px;
+  }
+  .leftPanel {
+    display: flex;
+    flex-direction: column;
+  }
+}

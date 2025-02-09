@@ -1,0 +1,8 @@
+.notFound {
+  background-image: url("/src/assets/Leonardo_Phoenix_10_Image_features_a_minimalist_and_modern_sty_3.jpg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

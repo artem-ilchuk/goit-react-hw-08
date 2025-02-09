@@ -1,0 +1,78 @@
+:root {
+  --background-lines: black;
+  --background-color: #f6f6f6;
+  --primary-text-color: #0a0a0a;
+  --secondary-text-color: lightgrey;
+  --text-add: #4a5568;
+  --contact: gray;
+  --custom: #f6f6f6;
+  --additional: #2d3748;
+  --toggle-bg: #f0eb9d;
+  --toggle-fg: #ffd000;
+}
+
+[data-theme="dark"] {
+  --background-lines: #ffa500;
+  --background-color: #0a0a0a;
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #0a0a0a;
+  --text-add: #f6f6f6;
+  --contact: black;
+  --custom: #0a0a0a;
+  --additional: #f6f6f6;
+  --toggle-bg: #f6f6f6;
+  --toggle-fg: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Playfair", serif;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 360px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0px 32px;
+  }
+}

@@ -1,0 +1,153 @@
+.hidden {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: none;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary-text-color);
+  line-height: 1;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-family: "Playfair", serif;
+}
+
+.subtitle {
+  font-size: 0.6rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+}
+
+.navLink {
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: serif;
+  font-weight: 400;
+  color: var(--custom);
+}
+
+.navLinkActive {
+  font-size: 1.2rem;
+  font-family: serif;
+  color: red;
+  text-decoration: underline;
+}
+
+.welcome {
+  font-size: 0.5rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: var(--custom);
+}
+
+.navCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+    border-radius: 8px;
+    width: 90px;
+    height: 80px;
+  }
+  .titleContainer {
+    padding: 0 15px;
+    color: var(--secondary-text-color);
+  }
+  .title {
+    font-size: 42px;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .navCont {
+    padding-left: 15px;
+  }
+
+  .navLink {
+    font-size: 1.7rem;
+  }
+
+  .navLinkActive {
+    font-size: 1.7rem;
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+  }
+  .navigation {
+    gap: 15px;
+  }
+
+  .toggleContainer {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    display: block;
+    border-radius: 8px;
+    width: 90px;
+    height: 96px;
+  }
+  .titleContainer {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .title {
+    font-size: 54px;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .navCont {
+    flex-direction: row;
+    align-items: center;
+    gap: 140px;
+  }
+  .nav {
+    padding-left: 20px;
+    gap: 40px;
+  }
+  .navigation {
+    gap: 100px;
+  }
+
+  .navLink {
+    font-size: 1.7rem;
+  }
+
+  .navLinkActive {
+    font-size: 1.7rem;
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+  }
+}

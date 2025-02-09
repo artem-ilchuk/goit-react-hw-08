@@ -30,7 +30,7 @@ const Navigation = () => {
   }, [theme]);
   return (
     <header className={s.navigation}>
-      <img className={s.logo} src={"/public/Logo.webp"} alt="Logo image" />
+      <img className={s.logo} src={"Logo.webp"} alt="Logo image" />
       <div className={s.titleContainer}>
         <h2 className={s.title}>Phonebook</h2>
         <p className={s.subtitle}>Seamless Connections</p>

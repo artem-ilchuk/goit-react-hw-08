@@ -17,11 +17,7 @@ const MobMenu = ({ isOpen, onRequestClose }) => {
       <div className={s.menu} onClick={(e) => e.stopPropagation()}>
         <div className={s.head}>
           <div className={s.label}>
-            <img
-              className={s.logo}
-              src="/src/assets/Logo.webp"
-              alt="Logo image"
-            />
+            <img className={s.logo} src={"Logo.webp"} alt="Logo image" />
             <div className={s.titleContainer}>
               <h2 className={s.title}>Phonebook</h2>
               <p className={s.subtitle}>Seamless Connections</p>
@@ -98,11 +94,7 @@ const MobMenu = ({ isOpen, onRequestClose }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  className={s.contactIcon}
-                  src="/src/assets/free-icon-email-4698704.png"
-                  alt="Email"
-                />
+                <img className={s.contactIcon} src={"Email.png"} alt="Email" />
               </a>
               <a
                 href="https://github.com/artem-ilchuk"
@@ -111,7 +103,7 @@ const MobMenu = ({ isOpen, onRequestClose }) => {
               >
                 <img
                   className={s.contactIcon}
-                  src="/src/assets/icons8-github-64.png"
+                  src={"Github black.png"}
                   alt="GitHub"
                 />
               </a>
@@ -122,7 +114,7 @@ const MobMenu = ({ isOpen, onRequestClose }) => {
               >
                 <img
                   className={s.contactIcon}
-                  src="/src/assets/code-examples-vercel(1).jpg"
+                  src={"Vercel.jpg"}
                   alt="Vercel"
                 />
               </a>
@@ -133,7 +125,7 @@ const MobMenu = ({ isOpen, onRequestClose }) => {
               >
                 <img
                   className={s.contactIcon}
-                  src="/src/assets/free-icon-linkedin-3536505.png"
+                  src={"Linkedin.png"}
                   alt="LinkedIn"
                 />
               </a>

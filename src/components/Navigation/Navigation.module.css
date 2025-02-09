@@ -76,7 +76,6 @@
     height: 80px;
   }
   .titleContainer {
-    padding: 0 15px;
     color: var(--secondary-text-color);
   }
   .title {
@@ -86,7 +85,7 @@
     font-size: 1rem;
   }
   .navCont {
-    padding-left: 15px;
+    padding-left: 45px;
   }
 
   .navLink {
@@ -117,7 +116,7 @@
     height: 96px;
   }
   .titleContainer {
-    padding-left: 28px;
+    padding-left: 10px;
     padding-right: 28px;
   }
   .title {
@@ -130,13 +129,14 @@
     flex-direction: row;
     align-items: center;
     gap: 140px;
+    padding-left: 60px;
   }
   .nav {
     padding-left: 20px;
     gap: 40px;
   }
   .navigation {
-    gap: 100px;
+    gap: 10px;
   }
 
   .navLink {
@@ -149,5 +149,8 @@
 
   .welcome {
     font-size: 1.5rem;
+  }
+  .toggleContainer {
+    padding-left: 280px;
   }
 }

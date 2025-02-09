@@ -33,7 +33,7 @@ const Advantages = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton className={s.accordionButton}>
-                  Easy Contact Management
+                  Easy Contact Management <p className={s.prompt}>Click me!</p>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={s.accordionContent}>
@@ -54,7 +54,8 @@ const Advantages = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton className={s.accordionButton}>
-                  Smart Search & Quick Access
+                  Smart Search & Quick Access{" "}
+                  <p className={s.prompt}>Click me!</p>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={s.accordionContent}>
@@ -76,7 +77,7 @@ const Advantages = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton className={s.accordionButton}>
-                  Cloud Backup & Sync
+                  Cloud Backup & Sync <p className={s.prompt}>Click me!</p>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={s.accordionContent}>
@@ -97,7 +98,7 @@ const Advantages = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton className={s.accordionButton}>
-                  Security & Privacy
+                  Security & Privacy <p className={s.prompt}>Click me!</p>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={s.accordionContent}>
@@ -117,7 +118,7 @@ const Advantages = () => {
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton className={s.accordionButton}>
-                  Multi-Platform Support
+                  Multi-Platform Support <p className={s.prompt}>Click me!</p>
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className={s.accordionContent}>

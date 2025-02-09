@@ -108,6 +108,11 @@
   font-weight: 700;
   border-radius: 4px;
 }
+.prompt {
+  color: lightslategray;
+  font-size: 14px;
+  padding-top: 5px;
+}
 @media (min-width: 768px) {
   .advantagesSection {
     max-width: 768px;
@@ -159,6 +164,10 @@
     text-align: center;
     padding: 20px;
     font-size: 1.9rem;
+  }
+  .prompt {
+    font-size: 20px;
+    padding-top: 10px;
   }
 }
 @media (min-width: 1280px) {

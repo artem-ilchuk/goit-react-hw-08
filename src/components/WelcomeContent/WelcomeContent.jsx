@@ -6,11 +6,7 @@ const WelcomeContent = () => {
       <div className="container">
         <h1 className={s.title}>Welcome to Phonebook!</h1>
         <div className={s.contentContainer}>
-          <img
-            className={s.image}
-            src="/src/assets/p_2b56a7b0-dfc3-11ef-a4d9-ea35b139fa6a_wm.png"
-            alt="Notebook image"
-          />
+          <img className={s.image} src={"Hero.png"} alt="Notebook image" />
           <div className={s.textContainer}>
             <ul>
               <li className={s.textItem}>

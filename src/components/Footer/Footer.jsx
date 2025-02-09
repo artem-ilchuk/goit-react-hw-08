@@ -9,7 +9,7 @@ const Footer = () => {
             <div className={s.footerLogoContainer}>
               <div>
                 <img
-                  src="/src/assets/Logo.webp"
+                  src={"Logo.webp"}
                   alt="Logo image"
                   className={s.footerLogo}
                 />
@@ -36,7 +36,7 @@ const Footer = () => {
                 >
                   <img
                     className={s.contactIcon}
-                    src="/src/assets/free-icon-email-4698704.png"
+                    src={"/Email.png"}
                     alt="Email"
                   />
                 </a>
@@ -47,7 +47,7 @@ const Footer = () => {
                 >
                   <img
                     className={s.contactIcon}
-                    src="/src/assets/icons8-github-64.png"
+                    src={"Github black.png"}
                     alt="GitHub"
                   />
                 </a>
@@ -58,7 +58,7 @@ const Footer = () => {
                 >
                   <img
                     className={s.contactIcon}
-                    src="/src/assets/code-examples-vercel(1).jpg"
+                    src={"Vercel.jpg"}
                     alt="Vercel"
                   />
                 </a>
@@ -69,7 +69,7 @@ const Footer = () => {
                 >
                   <img
                     className={s.contactIcon}
-                    src="/src/assets/free-icon-linkedin-3536505.png"
+                    src={"Linkedin.png"}
                     alt="LinkedIn"
                   />
                 </a>

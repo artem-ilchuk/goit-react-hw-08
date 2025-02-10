@@ -1,13 +1,6 @@
 .hidden {
   display: none;
 }
-.authNav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  padding-right: 5px;
-}
 
 .navLink {
   font-size: 0.9rem;
@@ -19,38 +12,14 @@
   color: var(--custom);
 }
 
-.logoutButton {
-  padding: 2px 4px;
-  border-radius: 8px;
-  background-color: #3b82f6;
-  color: white;
-  font-size: 0.9rem;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.logoutButton:hover {
-  background-color: #2dd4bf;
-}
-.burger {
-  fill: var(--custom);
-  width: 30px;
-  height: 30px;
-}
 @media (min-width: 768px) {
-  .logoutButton,
   .nav {
     display: block;
   }
   .nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .authNav {
     flex-direction: row;
+    align-items: center;
     gap: 20px;
   }
 
@@ -63,16 +32,5 @@
     font-family: serif;
     color: red;
     text-decoration: underline;
-  }
-
-  .logoutButton {
-    padding: 6px 10px;
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1280px) {
-  .logoutButton {
-    padding: 8px 20px;
-    font-size: 1.4rem;
   }
 }

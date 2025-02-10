@@ -7,8 +7,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { refreshUserThunk } from "./redux/auth/operations";
 import Loader from "./components/Loader/Loader";
 import { selectIsRefreshing } from "./redux/auth/selectors";
-import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import PublicRoute from "./components/PublicRoute/PublicRoute";
+import RestrictedRoute from "./components/RestrictedRoute/RestrictedRoute";
 
 const HomePage = lazy(() => import("./pages/Home Page/HomePage"));
 const RegistrationPage = lazy(() =>
@@ -31,9 +31,9 @@ function App() {
           <Route
             path="/contacts"
             element={
-              <PrivateRoute>
+              <RestrictedRoute>
                 <ContactsPage />
-              </PrivateRoute>
+              </RestrictedRoute>
             }
           />
         </Route>

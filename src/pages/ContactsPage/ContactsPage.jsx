@@ -1,9 +1,9 @@
-import UserMenu from "../../components/UserMenu/UserMenu";
+import UserContent from "../../components/UserContent/UserContent";
 
 const ContactsPage = () => {
   return (
     <>
-      <UserMenu />
+      <UserContent />
     </>
   );
 };

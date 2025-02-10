@@ -1,11 +1,7 @@
 import s from "./Navigation.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import {
-  selectIsLoggedIn,
-  selectTheme,
-  selectUser,
-} from "../../redux/auth/selectors";
+import { selectIsLoggedIn, selectTheme } from "../../redux/auth/selectors";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { Toggle } from "../Toggleswitch/TogleSwitch";
@@ -13,7 +9,6 @@ import { themeToggle } from "../../redux/auth/slice";
 
 const Navigation = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  const user = useSelector(selectUser);
   const theme = useSelector(selectTheme);
   const dispatch = useDispatch();
 
@@ -61,16 +56,6 @@ const Navigation = () => {
             </NavLink>
           )}
         </nav>
-        {isLoggedIn && (
-          <h2
-            className={clsx({
-              [s.welcome]: windowWidth >= 768,
-              [s.hidden]: windowWidth > 319 || windowWidth < 768,
-            })}
-          >
-            Welcome {user.name}
-          </h2>
-        )}
       </div>
       <div className={s.toggleContainer}>
         <Toggle

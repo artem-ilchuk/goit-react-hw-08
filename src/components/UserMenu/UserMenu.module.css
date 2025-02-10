@@ -1,54 +1,112 @@
-.appContainer {
-  background-image: url("/src/assets/Leonardo_Phoenix_10_Image_features_a_minimalist_and_modern_sty_3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.hidden {
+  display: none;
+}
+.welcome {
+  font-family: "Libre Baskerville", serif;
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: var(--custom);
+}
+.authNav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  gap: 5px;
 }
-.content {
+.logoutButton {
+  padding: 2px 4px;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 0.9rem;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #2dd4bf;
+}
+.burger {
+  fill: var(--custom);
+  width: 30px;
+  height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.leftPanel {
+.greet {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 10px;
 }
-.rightPanel {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
+
 @media (min-width: 768px) {
-  .content {
+  .welcome {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    text-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 120px;
+    gap: 3px;
+  }
+  .authNav {
+    flex-direction: row;
     gap: 20px;
   }
-  .leftPanel {
+  .logoutButton {
+    display: block;
+    padding: 5px 6px;
+    font-size: 1.2rem;
+  }
+  .greetTitle {
+    font-size: 1.2rem;
+  }
+  .nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 215px;
+    gap: 10px;
+  }
+  .greet {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
   }
 }
 @media (min-width: 1280px) {
-  .appContainer {
-    height: 100vh;
-  }
-  .content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-top: 20px;
-    gap: 20px;
-  }
-  .leftPanel {
+  .welcome {
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
+    max-width: fit-content;
+    align-items: center;
+    gap: 3px;
+  }
+  .logoutButton {
+    padding: 8px 20px;
+    font-size: 1.4rem;
+  }
+
+  .authNav {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .greetTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+    gap: 50px;
   }
 }

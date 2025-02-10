@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  gap: 25px;
   align-items: center;
   justify-content: space-around;
   color: black;
@@ -11,14 +10,17 @@
   text-align: center;
   border: 2px solid black;
   border-radius: 4px;
+  padding: 10px;
   background-color: lightgray;
   box-shadow: 2px 2px 4px 4px grey;
-  width: 220px;
+  width: 270px;
 }
 .noText {
-  max-width: 200px;
+  max-width: 160px;
 }
 .gimIcon {
+  width: 40px;
+  height: 40px;
   padding-left: 10px;
 }
 
@@ -63,6 +65,7 @@
   color: red;
   font-size: 1.25rem;
 }
+
 @media (min-width: 768px) {
   .noContacts {
     padding: 10px;

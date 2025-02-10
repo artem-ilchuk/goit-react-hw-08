@@ -5,6 +5,7 @@ import {
   deleteContact,
   editContact,
 } from "../contacts/operations";
+import { logoutThunk } from "../auth/operations";
 
 const initialState = {
   items: [],
@@ -26,6 +27,9 @@ const contactsSlice = createSlice({
           contact.id === action.payload.id ? action.payload : contact
         );
         state.isLoading = false;
+      })
+      .addCase(logoutThunk.fulfilled, (state) => {
+        state.items = [];
       })
       .addMatcher(
         isAnyOf(

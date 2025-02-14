@@ -4,6 +4,7 @@ import { selectIsLoggedIn, selectUser } from "../../redux/auth/selectors";
 import { useEffect, useState } from "react";
 import { logoutThunk } from "../../redux/auth/operations";
 import clsx from "clsx";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const UserMenu = () => {
   const dispatch = useDispatch();
@@ -43,6 +44,7 @@ const UserMenu = () => {
             Logout
           </button>
         </div>
+        <BurgerMenu windowWidth={windowWidth} />
       </div>
     )
   );

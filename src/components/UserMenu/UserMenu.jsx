@@ -4,15 +4,12 @@ import { selectIsLoggedIn, selectUser } from "../../redux/auth/selectors";
 import { useEffect, useState } from "react";
 import { logoutThunk } from "../../redux/auth/operations";
 import clsx from "clsx";
-import MobMenu from "../MobMenu/MobMenu";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 const UserMenu = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
-  const [isMobModalOpen, setIsModalOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -20,10 +17,6 @@ const UserMenu = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const handleOpenModal = () => {
-    setIsModalOpen((prevState) => !prevState);
-  };
 
   return (
     isLoggedIn && (
@@ -50,20 +43,6 @@ const UserMenu = () => {
             Logout
           </button>
         </div>
-        <GiHamburgerMenu
-          className={clsx({
-            [s.hidden]: windowWidth >= 768,
-            [s.burger]: windowWidth < 768,
-          })}
-          onClick={handleOpenModal}
-        />
-
-        {isMobModalOpen && (
-          <MobMenu
-            isOpen={isMobModalOpen}
-            onRequestClose={() => setIsModalOpen(false)}
-          />
-        )}
       </div>
     )
   );

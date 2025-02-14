@@ -2,9 +2,12 @@ import s from "./AuthNav.module.css";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import MobMenu from "../MobMenu/MobMenu";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const AuthNav = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMobModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -12,6 +15,9 @@ const AuthNav = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  const handleOpenModal = () => {
+    setIsModalOpen((prevState) => !prevState);
+  };
 
   return (
     <div className={s.nav}>
@@ -28,6 +34,20 @@ const AuthNav = () => {
           Login
         </NavLink>
       </div>
+      <GiHamburgerMenu
+        className={clsx({
+          [s.hidden]: windowWidth >= 768,
+          [s.burger]: windowWidth < 768,
+        })}
+        onClick={handleOpenModal}
+      />
+
+      {isMobModalOpen && (
+        <MobMenu
+          isOpen={isMobModalOpen}
+          onRequestClose={() => setIsModalOpen(false)}
+        />
+      )}
     </div>
   );
 };
